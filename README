@@ -1,0 +1,20 @@
+mmm - mail to mattermost
+========================
+
+The idea is to use this helper in postfix transports to post emails to
+mattermost instead of dispatching them locally, via smtp or other regular
+transports.
+
+Configuration is done in /etc/mmm.toml:
+
+    url="https://mattermost-url/hooks/hook-id"
+    username="some name"
+
+Default configuration uses
+
+    url="http://localhost"
+    username="$HOSTNAME"
+
+
+Global configuration is read from /etc/mmm.toml but can be overridden in
+$HOME/.mmm.toml.
