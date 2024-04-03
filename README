@@ -5,6 +5,9 @@ The idea is to use this helper in postfix transports to post emails to
 mattermost instead of dispatching them locally, via smtp or other regular
 transports.
 
+Posting is done to preconfigured URLs of Mattermost's incoming webhooks.
+https://developers.mattermost.com/integrate/webhooks/incoming/#create-an-incoming-webhook
+
 Configuration is done in /etc/mmm.toml:
 
     url="https://mattermost-url/hooks/hook-id"
