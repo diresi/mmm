@@ -1,0 +1,4 @@
+# Required: Incoming webhook URL of Mattermost
+url="https://mattermost.example.com/hooks/0123456abcdefgh"
+# Optional: A name to use instead of $HOSTNAME
+# username="my name"

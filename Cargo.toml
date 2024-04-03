@@ -2,11 +2,21 @@
 name = "mmm"
 version = "0.1.0"
 edition = "2021"
+description = "Mail to Mattermost"
+authors = ["Christoph Rissner <diresi@gmx.net>"]
+license = "MIT"
+readme = "README"
 
 [profile.release]
 strip = true
 panic = "abort"
 lto = true
+
+[package.metadata.arch]
+#arch = ["x86_64"]
+makedepends = ["cargo"]
+#depends = []
+#provides = ["mmm"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
